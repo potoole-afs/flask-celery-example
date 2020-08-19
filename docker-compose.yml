@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  flask-example:
+    build:
+      context: .
+    volumes:
+      - c:/Users/paul.j.otoole/Documents/flask-celery-example:/code
+    ports:
+      - 5000:5000
+    
