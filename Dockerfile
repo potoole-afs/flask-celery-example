@@ -1,4 +1,3 @@
 FROM ubuntu:20.04
-RUN apt update 
-RUN apt install software-properties-common -yf  
+RUN apt-get update && apt-get install -y software-properties-common
 CMD tail -f /dev/null
