@@ -21,9 +21,9 @@ class Config(object):
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = (
-        "postgresql+psycopg2://postgres:postgres@localhost:5432/celery"
-    )
+    #SQLALCHEMY_DATABASE_URI = (
+    #    "postgresql+psycopg2://postgres:postgres@localhost:5432/celery"
+    #)
 
 
 class ProductionConfig(Config):
