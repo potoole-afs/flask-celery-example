@@ -45,19 +45,16 @@ docker run -d --name redis -p 6379:6379 redis
 
 ## run celery worker
 ```
-source .env
 celery -A src.worker:celery worker --loglevel=DEBUG
 ```
 
 ## run celery beat for periodic tasks
 ```
-source .env
 celery -A src.worker:celery beat --loglevel=INFO
 ```
 
 ## run flask app
 ``` bash
-source .env
 # check the available routes
 flask routes
 # start flask development server
