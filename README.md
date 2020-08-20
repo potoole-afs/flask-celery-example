@@ -30,7 +30,7 @@ source $HOME/.poetry/env
 export FLASK_ENV="development"
 export FLASK_APP="src.app:create_app"
 export SECRET_KEY="change_me"
-export DATABASE_URL="postgresql+psycopg2://postgres:postgres@localhost:5432/celery"
+export DATABASE_URL="postgresql+psycopg2://postgres:postgres@host.docker.internal:5432/celery"
 export CELERY_TIMEZONE="Europe/Berlin"
 export CELERY_BROKER_URL="redis://flask-celery-example_redis_1:6379/0"
 export CELERY_RESULT_BACKEND="redis://flask-celery-example_redis_1:6379/0"
