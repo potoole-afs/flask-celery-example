@@ -17,6 +17,13 @@ based on [flask-celery-example by Miguel Grinberg](https://github.com/miguelgrin
 
 # installation
 
+## start container
+```
+docker-compose build
+docker-compose up -d
+docker exec -it flask-celery-example_alert_1 bash install.sh
+docker exec -it flask-celery-example_alert_1 /bin/bash
+```
 ## install dependencies with [poetry](https://python-poetry.org/)
 ``` bash
 poetry install
